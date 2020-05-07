@@ -21,11 +21,12 @@ We recommend this as your best first starting point for cost optimization analys
 Compute is typically a high-leverage area for cost optimization, as it encompasses much of the Infrastructure as a Service (IaaS) world. 
 
 ### Underutilized VMs
-[GearUp](https://gearup.microsoft.com/checklists/well-architected)
+Good client-specific information on potentially underutilized VMs is available at the
+[GearUp](https://gearup.microsoft.com/checklists/well-architected) site.
 
 ### Reserved Instances
-
-
+There is some excellent customer-specific analysis of RIs at the [C&AI Customer Portal](https://caicustomers.microsoftonline.com/). Here is an example of a chart showing this - more detailed data is available for deeper analysis.
+[images/RIs-From CI-Site.JPG](Reserved Image analysis from C&AI Customer Portal)
 
 ### App Service Environment
 Many customers, especially those in highly-regulated industries such as healthcare and financial services, are using [App Service Environments](https://docs.microsoft.com/en-us/azure/app-service/environment/intro) (ASE) over cheaper [App Services](https://docs.microsoft.com/en-us/azure/app-service/) because they wanted to avoid exposing the web applications and APIs running there from the public internet. In the past, using an ASE was the only way to accomplish this.
