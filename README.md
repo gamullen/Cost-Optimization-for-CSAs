@@ -21,6 +21,13 @@ We recommend this as your best first starting point for cost optimization analys
 Compute is typically a high-leverage area for cost optimization, as it encompasses much of the Infrastructure as a Service (IaaS) world. 
 
 ### Underutilized VMs
+Many customers have underutilized, and even unused, VMs in their subscriptions of which they are unaware.
+Depending on the family, they can add up to significant cost.
+When discussing this topic with customers, it is important that they understand that there is no guarantee
+that they will be able to create new VMs when others are deallocated.
+This is especially vital to reinforce when the VMs are in regions having capacity issues.
+You can check the capacity status of Azure regions [here](https://microsoft.sharepoint.com/teams/AzureServiceExperience/Pages/Capacity.aspx).
+
 Good client-specific information on potentially underutilized VMs is available at the
 [GearUp](https://gearup.microsoft.com/checklists/well-architected) site.
 
