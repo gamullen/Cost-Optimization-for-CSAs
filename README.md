@@ -31,7 +31,7 @@ You can check the capacity status of Azure regions [here](https://microsoft.shar
 Good client-specific information on potentially underutilized VMs is available at the
 [GearUp](https://gearup.microsoft.com/checklists/well-architected) site.
 
-Azure Advisor has excellent recommendations on underutilized VMs. See a sample ![here](images/AdvisorCostRecommendations.jpg).
+Azure Advisor has excellent recommendations on underutilized VMs. See a sample here: !(images/AdvisorCostRecommendations.jpg).
 
 ### Reserved Instances
 There is some excellent customer-specific analysis of RIs at the [C&AI Customer Portal](https://caicustomers.microsoftonline.com/). Here is an example of a chart showing this: ![Reserved Image analysis](images/RIs-From-CI-Site.JPG)
