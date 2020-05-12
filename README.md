@@ -76,7 +76,7 @@ and time consuming for large amounts of data.
 Azure has created [lifecycle management](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal) to address this.
 This feature allows you to create rules to automatically move blobs between access levels based on "last touched" status.
 For example, this rule sends a given blob to archive if it hasn't been accessed in one year:
-[Blob Lifecycle Rule](images/BlobLifecycleRule.jpg).
+![Blob Lifecycle Rule](images/BlobLifecycleRule.jpg).
 
 ## Networking
 
