@@ -130,4 +130,4 @@ A side effect of this is that the actual business units benefiting from their so
 to optimize their applications via many of the means described in this document, driving up costs.
 
 * This will become a footer
-{:footer}
+{% include footer.html %}
