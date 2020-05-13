@@ -1,3 +1,6 @@
+* This will become a table of contents (this text will be scrapped).
+{:toc}
+
 # Cost Optimization for CSAs
 Cost optimization guidelines for CSAs
 
