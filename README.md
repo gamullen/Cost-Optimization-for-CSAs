@@ -100,8 +100,25 @@ Because of this, they eventually grew their subscriptions to a point where the S
 We worked with them to change to a Hub and Spoke network topology, allowing them to revert to the Standard SKU. In their case, this resulted in approximately $36K in savings annually. It also led to a more modern and flexible network architecture better suited for future growth.
 
 ### Unused Public IPs
-Currently, static public IPs in Azure cost over $40 annually. Eliminating unused ones is simple.
+Currently, static public IPs in Azure cost over $40 annually. Eliminating unused ones is simple,
+and Azure Advisor does a
+nice job highlighting underutilized public IP addresses as shown in 
+[this screenshot](https://github.com/gamullen/Cost-Optimization-for-CSAs/blob/master/README.md#underutilized-vms).
 
 ## Governance
+Poor governance may be an area that doesn't jump to mind when discussion cost optimization,
+but it can play a signficant direct and indirect role.
 
 ### Business-Unit Chargeback
+Often, customers start small with Azure and move one or two workloads over.
+At times, there is little discussion about what business unit will be paying for the services, and the IT department ends
+up footing the bill.
+This may work well for a while, but it will inevitibly reach a point where the monthly Azure spend is 
+pushing the IT department's budget.
+A side effect of this is that the actual business units benefiting from their solutions running in Azure have no incentive
+to optimize their applications via many of the means described in this document, driving up costs.
+
+Microsoft has extensive internal experience with Azure Governance, as it needs to optimize how it runs all its own
+SaaS solutions (Microsoft365, Dynamics, etc.) on Azure.
+This guidance has been well documented on the [Azure Governance](https://azure.microsoft.com/en-us/solutions/governance/) site.
+Note that governance covers more than pure Azure costs - it also results in better operations, management, extensibility, security, etc.
