@@ -2,11 +2,11 @@
 Cost optimization guidelines for CSAs
 
 ## Introduction
-One of the primary job responsibilities of Cloud Solution Architects (CSA) is to help customers optimize their Azure spend. 
+One of the primary job responsibilities of Cloud Solution Architects (CSA) is to help customers optimize their Azure spend and workloads.
 While there are many tools available to help with this, they are often spread out across multiple domains, and some are documented more as "tribal knowledge" than sharable guidelines.
 
 The goal of this documentation is to provide CSAs with a repository to not only learn cost optimization ideas and best practices, but in addition serve as a place for them to add ones of their own.
-If you want to assist, please contact [Gary Mullen-Schultz](mailto:gamullen@microsoft.com).
+If you want to assist or have ideas to contribute, please contact [Gary Mullen-Schultz](mailto:gamullen@microsoft.com).
 
 ### Azure Advisor
 [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview) is a great first place to look for "low-hanging fruit" ideas on cost savings. Advisor also provides other valuable guidance for Azure usage, including:
@@ -54,6 +54,19 @@ While this satisifies the high-water peak usage needs, it often results in sever
 Azure has a capability called [Virtual Machine Scale Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview) (VMSS) that make it possible to increase or decrease the number of active VMs satisfying a given workload based on one or more criteria. For example, you could specify that another VM gets added to the pool if the average CPU usage reaches 75% for a five-minute period of time. Similarly, a VM could be dropped from the pool if the average CPU usage drops below 20% for the same period. In this way, customers can safely cover their peak compute needs while realizing potentially significant savings at low-usage times.
 
 VMSS does not add additional costs beyond the VMs used and their associated resources.
+
+### Optimize to Azure Functions or Azure Logic Apps
+Often, a customer starts with a "Lift and Shift" from an on-premises workload to Azure.
+This usually means simply moving everything in a "one size fits all" fashion, with little to no optimization.
+While the use of [VMSSs](https://github.com/gamullen/Cost-Optimization-for-CSAs/blob/master/README.md#virtual-machine-scale-sets) as described above can help, there are some compute-intensive capabilities that lend themselves very well to migrating to
+[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/) or to
+[Azure Logic Apps](https://docs.microsoft.com/en-us/azure/logic-apps/).
+Both services can be used on a purely consumption basis, meaning that the customer gets charged only for actual
+invocations, with no ongoing chargeback when nothing is being executed.
+Another benefit is that the underlying infrastruction automatically scales and contract without any customer intervention.
+It's even more seamless and powerful than VMSSs - think electricity.
+
+See [this page](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs) for an excellent discussion of which Azure serverless compute option is the best fit for your workload.
 
 ## Data
 
