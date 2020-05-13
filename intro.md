@@ -128,6 +128,3 @@ This may work well for a while, but it will inevitibly reach a point where the m
 pushing the IT department's budget.
 A side effect of this is that the actual business units benefiting from their solutions running in Azure have no incentive
 to optimize their applications via many of the means described in this document, driving up costs.
-
-* This will become a footer
-{% include footer.html %}
