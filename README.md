@@ -111,8 +111,9 @@ but it can play a signficant direct and indirect role.
 Microsoft has extensive internal experience with Azure Governance, as it needs to optimize how it runs all its own
 SaaS solutions (Microsoft365, Dynamics, etc.) on Azure.
 Two excellent starting points include:
-*[Azure Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/)
-*[Azure Governance](https://azure.microsoft.com/en-us/solutions/governance/)
+
+* [Azure Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/)
+* [Azure Governance](https://azure.microsoft.com/en-us/solutions/governance/)
 
 Note that governance covers more than pure Azure costs - it also results in better operations, management, extensibility, security, etc.
 
