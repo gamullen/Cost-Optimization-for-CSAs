@@ -4,7 +4,7 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - intro.md
-  - junk.md
+  - intro.html
+  - junk.html
 
 theme: jekyll-theme-minimal
