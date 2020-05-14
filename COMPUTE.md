@@ -4,6 +4,11 @@ Compute is typically a high-leverage area for cost optimization, as it encompass
 ### Underutilized VMs
 Many customers have underutilized, and even unused, VMs in their subscriptions of which they are unaware.
 Depending on the family, they can add up to significant cost.
+Non-prod environments are good places to start - developers and testers often spin up resources that
+are used during the day, but sit idle at night and on weekends.
+[This page](https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management-config) has 
+excellent information on automation VM shutdown and startup based on conditions such as time, CPU utilization, etc.
+
 When discussing this topic with customers, it is important that they understand that there is no guarantee
 that they will be able to create new VMs when others are deallocated.
 This is especially vital to reinforce when the VMs are in regions having capacity issues.
