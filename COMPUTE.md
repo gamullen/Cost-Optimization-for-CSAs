@@ -14,6 +14,12 @@ Good client-specific information on potentially underutilized VMs is available a
 
 Azure Advisor has excellent recommendations on underutilized VMs. See a sample here: ![Advisor Recommendations](images/AdvisorCostRecommendations.jpg).
 
+### Oversized VMs
+These are similar to underutilized VMs, and also show up in Azure Advisor.
+Oversized VMs are ones that are typically highly utilized, but are of a larger size (CPU, RAM, etc.) than usage
+statistics show is necessary.
+Often, dropping down to a [B-Series](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable) "burstable" VM will still satisfy the usage and save money.
+
 ### Reserved Instances
 There is some excellent customer-specific analysis of RIs at the [C&AI Customer Portal](https://caicustomers.microsoftonline.com/). Here is an example of a chart showing this: ![Reserved Image analysis](images/RIs-From-CI-Site.JPG)
 
