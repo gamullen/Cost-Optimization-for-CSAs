@@ -40,6 +40,7 @@ this option is well worth examining.
 
 ### Double Check Size Needs
 
+
 ### Double Check Performance Needs
 Depending on the storage type under review (storage account, managed disk, etc.) there are typically several levels of performance
 available to choose.
