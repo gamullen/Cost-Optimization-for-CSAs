@@ -13,3 +13,9 @@ Azure has created [lifecycle management](https://docs.microsoft.com/en-us/azure/
 This feature allows you to create rules to automatically move blobs between access levels based on "last touched" status.
 For example, this rule sends a given blob to archive if it hasn't been accessed in one year:
 ![Blob Lifecycle Rule](images/BlobLifecycleRule.JPG).
+
+### Delete Unattached Disks
+Often, when virtual machines get deleted the disks that were created for them do not.
+This can result in many unused disks that are racking up charges.
+See [this](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks) documentation
+for PowerShell scripts to both discover and delete such resources.
