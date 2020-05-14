@@ -13,6 +13,21 @@ Save costs for SQL Database compute resources with Azure SQL Database reserved c
 - Only users with MSDN(Visual Studio) subscription users would be able to access a Dev/Test subscription: https://azure.microsoft.com/en-us/offers/ms-azr-0148p/
 - Azure SQL Database managed Instance is currently supported on the following subscription types https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-resource-limits
 
+### Control SQL Database Compute Time
+
+#### Serverless Tier
+- Consider running Serverless tier for Dev environments and when autopause/auto-resume is desired.
+- Be aware of cold start with Autostarte when using this solution
+-  Pricing: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-serverless#cost
+- Autoscaling: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-serverless#autoscaling
+- Autopause and Autoresume: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-serverless#autopausing-and-autoresuming
+
+#### Azure Automation to Scale
+
+You can schedule an Azure Automation Powershell script to scale up/down at scheduled times.
+
+https://docs.microsoft.com/en-us/azure/sql-database/scripts/sql-database-monitor-and-scale-database-powershell
+
 ### Right Size Underutilized SQL Databases
 This is very similar to the underutilized VMs section [above](https://github.com/gamullen/Cost-Optimization-for-CSAs#underutilized-vms), but SQL resources can often be even more expensive than VMs.
 
