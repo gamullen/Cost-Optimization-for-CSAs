@@ -10,6 +10,10 @@ Two excellent starting points include:
 
 Note that governance covers more than pure Azure costs - it also results in better operations, management, extensibility, security, etc.
 
+### Take Advantage of DevTest Subscriptions
+[DevTest subscriptions](https://azure.microsoft.com/en-us/pricing/dev-test/) can provide significant cost savings
+for a customer's non-prod workloads.
+
 ### Business-Unit Chargeback
 Often, customers start small with Azure and move one or two workloads over.
 At times, there is little discussion about what business unit will be paying for the services, and the IT department ends
