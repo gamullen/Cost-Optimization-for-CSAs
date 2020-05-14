@@ -22,7 +22,7 @@ Save costs for SQL Database compute resources with Azure SQL Database reserved c
 - Autoscaling: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-serverless#autoscaling
 - Autopause and Autoresume: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-serverless#autopausing-and-autoresuming
 
-#### Azure Automation to Scale
+#### Azure Automation
 
 You can schedule an Azure Automation Powershell script to scale up/down at scheduled times.
 
