@@ -1,11 +1,11 @@
 ## Data
 
-### Leverage SQL Elastic Pools
-[Azure SQL Elastic Pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool)
-are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Elastic pools in Azure SQL Database enable SaaS developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
-
 ### Reserved Capacity
 Save costs for SQL Database compute resources with [Azure SQL Database reserved capacity](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-reserved-capacity).
+
+### Leverage SQL Elastic Pools for SaaS implementations
+[Azure SQL Elastic Pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool)
+are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Elastic pools in Azure SQL Database enable SaaS developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
 
 ### Control SQL Database Compute Time
 
