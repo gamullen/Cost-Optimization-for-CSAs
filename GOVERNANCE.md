@@ -22,3 +22,20 @@ This may work well for a while, but it will inevitibly reach a point where the m
 pushing the IT department's budget.
 A side effect of this is that the actual business units benefiting from their solutions running in Azure have no incentive
 to optimize their applications via many of the means described in this document, driving up costs.
+
+### Budgets
+[Azure Budgets](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/cost-management-budget-scenario)
+are a control you can use to create monetary or metric-based thresholds for a scope such as a subscription, resource group or even management group. 
+Alerts can be configured that are triggered at a certain configurable threshold of that budget.
+For example, at 80% an alert is generated that could send an email, at 90% an email and an Azure Function trigger to send the owner a report of their spending. 
+[Azure Action Groups](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups)
+are used to define what actions occur when a given threshold is reached.
+Actions that can be performed currently include:
+* Automation Runbook.
+* Azure Function.
+* Email Azure Resource Manager Role.
+* Email/SMS message/Push/Voice.
+* ITSM.
+* Logic App.
+* Secure Webhook.
+* Webhook.
