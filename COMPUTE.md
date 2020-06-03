@@ -30,6 +30,11 @@ There is some excellent customer-specific analysis of RIs at the [C&AI Customer 
 
 More detailed information that can be downloaded and analyzed in Excel is also available at this site.
 
+### Azure Hybrid Benefit
+[Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/) 
+is a pricing benefit for customers who have licenses with Software Assurance, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure. 
+Eligible customers can save up to 40%* on Azure Virtual Machines (infrastructure as a service, or IaaS), and save up to 55% on Azure SQL Database (platform as a service, or PaaS) and SQL Server on Azure Virtual Machines (IaaS) with Azure Hybrid Benefit, which increases to up to 80% when combined with Azure Reserved Instances.
+
 ### App Service Environment
 Many customers, especially those in highly-regulated industries such as healthcare and financial services, are using [App Service Environments](https://docs.microsoft.com/en-us/azure/app-service/environment/intro) (ASE) over cheaper [App Services](https://docs.microsoft.com/en-us/azure/app-service/) because they wanted to avoid exposing the web applications and APIs running there from the public internet. In the past, using an ASE was the only way to accomplish this.
 
